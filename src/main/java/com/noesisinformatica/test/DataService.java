@@ -40,9 +40,9 @@ public class EmbeddedDatabaseDemo {
 
          pstmt = conn.prepareStatement("insert into person
             (name,email,phone) values(?,?,?)");
-         pstmt.setString(1, "Hagar the Horrible");
-         pstmt.setString(2, "hagar@somewhere.com");
-         pstmt.setString(3, "1234567890");
+         pstmt.setString(1, "Sun and mooon");
+         pstmt.setString(2, "xyz@gyk.com");
+         pstmt.setString(3, "987654321");
          pstmt.executeUpdate();
 
          rs = stmt.executeQuery("select * from person");
